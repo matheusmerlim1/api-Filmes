@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>🎬 Catálogo de Filmes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎬 Catálogo de Filmes</h1>
+
+  <section>
+    <h2>Adicionar Filme (Local)</h2>
+    <label>Nome:</label>
+    <input type="text" id="nomeFilme" placeholder="Ex: Matrix">
+    <label>Descrição:</label>
+    <textarea id="descricaoFilme" placeholder="Digite uma breve sinopse..."></textarea>
+    <label>Nota:</label>
+    <input type="number" id="notaFilme" min="0" max="10" placeholder="Ex: 8.5">
+    <button onclick="adicionarFilme()">Cadastrar Filme</button>
+  </section>
+
+  <section>
+    <h2>Buscar Filmes</h2>
+    <input type="text" id="buscaFilme" placeholder="Digite o nome do filme">
+    <button onclick="buscarLocal()">Buscar Local</button>
+    <button onclick="buscarTmdb()">Buscar na TMDb</button>
+    <div id="resultadoBusca"></div>
+  </section>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
